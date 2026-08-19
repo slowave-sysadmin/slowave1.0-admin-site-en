@@ -22,13 +22,9 @@ export async function GET(_req: NextRequest, ctx: RouteContext) {
     // Tests for this sensor
     const tests = await query(
       `SELECT t.test_id, t.patient_name, t.status, t.status_analysis, t.created_at,
-              t.organization_id, o.organization_name,
-              afn.failure_reason_id, afn.note, afn.action_taken, afn.action_comment,
-              fr.name as failure_reason_name
+              t.organization_id, o.organization_name
        FROM tests t
        LEFT JOIN organizations o ON o.organization_id = t.organization_id
-       LEFT JOIN analysis_failure_notes afn ON afn.test_id = t.test_id
-       LEFT JOIN failure_reasons fr ON fr.id = afn.failure_reason_id
        WHERE t.serial_number = ?
        ORDER BY t.created_at DESC`,
       [serial]

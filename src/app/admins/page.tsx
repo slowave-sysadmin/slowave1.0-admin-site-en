@@ -29,11 +29,7 @@ const pageOptions = [
   { value: "/users", label: "사용자 관리" },
   { value: "/devices", label: "센서 관리" },
   { value: "/tests", label: "검사 조회" },
-  { value: "/analysis-failures", label: "분석 실패 관리" },
-  { value: "/issues", label: "이슈 관리" },
-  { value: "/quality-projects", label: "품질개선프로젝트" },
   { value: "/features", label: "기능 관리" },
-  { value: "/support", label: "지원 요청" },
   { value: "/logs", label: "로그 조회", viewOnly: true },
   { value: "/manual", label: "매뉴얼", viewOnly: true },
 ];

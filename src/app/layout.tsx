@@ -12,8 +12,8 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Slowave 1.0 관리자",
-  description: "Slowave 1.0 관리자 사이트",
+  title: "Slowave1.0 Eng Ver. 관리자",
+  description: "Slowave1.0 Eng Ver. 관리자 사이트",
 };
 
 export default function RootLayout({
